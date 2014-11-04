@@ -54,11 +54,11 @@ function FootPainter()
 function LinePainter($name, $title, $subtitle, $legend, $xAxis, $yFormat, $data)
 {
 	$js = "";
-	$js .= "\t\t\t\tvar myChart = ec.init(document.getElementById($name));\n";
+	$js .= "\t\t\t\tvar myChart = ec.init(document.getElementById('$name'));\n";
 	$js .= "\t\t\t\tvar option = {\n";
 	$js .= "\t\t\t\t\ttitle:{\n";
-	$js .= "\t\t\t\t\t\ttext:$title,\n";
-	$js .= "\t\t\t\t\t\tsubtext:$subtitle,\n";
+	$js .= "\t\t\t\t\t\ttext:'$title',\n";
+	$js .= "\t\t\t\t\t\tsubtext:'$subtitle',\n";
 	$js .= "\t\t\t\t\t},\n";
 	$js .= "\t\t\t\t\ttooltip:{\n";
 	$js .= "\t\t\t\t\t\tshow:true\n";
@@ -97,11 +97,11 @@ function LinePainter($name, $title, $subtitle, $legend, $xAxis, $yFormat, $data)
 function BarPainter($name, $title, $subtitle, $legend, $xAxis, $yFormat, $data)
 {
 	$js = "";
-	$js .= "\t\t\t\tvar myChart = ec.init(document.getElementById($name));\n";
+	$js .= "\t\t\t\tvar myChart = ec.init(document.getElementById('$name'));\n";
 	$js .= "\t\t\t\tvar option = {\n";
 	$js .= "\t\t\t\t\ttitle:{\n";
-	$js .= "\t\t\t\t\t\ttext:$title,\n";
-	$js .= "\t\t\t\t\t\tsubtext:$subtitle,\n";
+	$js .= "\t\t\t\t\t\ttext:'$title',\n";
+	$js .= "\t\t\t\t\t\tsubtext:'$subtitle',\n";
 	$js .= "\t\t\t\t\t},\n";
 	$js .= "\t\t\t\t\ttooltip:{\n";
 	$js .= "\t\t\t\t\t\tshow:true\n";
@@ -140,11 +140,11 @@ function BarPainter($name, $title, $subtitle, $legend, $xAxis, $yFormat, $data)
 function PiePainter($name, $title, $subtitle, $legend, $data)
 {
 	$js = "";
-	$js .= "\t\t\t\tvar myChart = ec.init(document.getElementById($name));\n";
+	$js .= "\t\t\t\tvar myChart = ec.init(document.getElementById('$name'));\n";
 	$js .= "\t\t\t\tvar option = {\n";
 	$js .= "\t\t\t\t\ttitle:{\n";
-	$js .= "\t\t\t\t\t\ttext:$title,\n";
-	$js .= "\t\t\t\t\t\tsubtext:$subtitle,\n";
+	$js .= "\t\t\t\t\t\ttext:'$title',\n";
+	$js .= "\t\t\t\t\t\tsubtext:'$subtitle',\n";
 	$js .= "\t\t\t\t\t\tx:'center'\n";
 	$js .= "\t\t\t\t\t},\n";
 	$js .= "\t\t\t\t\ttooltip:{\n";

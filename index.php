@@ -10,9 +10,9 @@ $chartype = array(
 $js .= PathDefine($chartype);
 $js .= ExPainter($chartype);
 
-$name = "'line'";
-$title = "'未来一周气温变化'";
-$subtitle = "'纯属虚构'";
+$name = "line";
+$title = "未来一周气温变化";
+$subtitle = "纯属虚构";
 $legend = ['最高气温', '最低气温'];
 $xAxis = ['周一', '周二', '周三', '周四', '周五', '周六', '周日'];
 $yFormat = "℃";
@@ -31,7 +31,7 @@ $data = array(
 
 
 $js .= LinePainter($name, $title, $subtitle, $legend, $xAxis, $yFormat, $data);
-$name = "'bar'";
+$name = "bar";
 $data = array(
 			array(
 				'name' => '最高气温',
@@ -46,8 +46,8 @@ $data = array(
 		);
 $js .= BarPainter($name, $title, $subtitle, $legend, $xAxis, $yFormat, $data);
 
-$name = "'pie'";
-$title = "'某网站用户访问来源'";
+$name = "pie";
+$title = "某网站用户访问来源";
 $legend = array('直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎');
 $data = array(
 			array(
